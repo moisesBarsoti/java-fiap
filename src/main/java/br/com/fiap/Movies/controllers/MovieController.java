@@ -8,6 +8,11 @@ public class MovieController {
 
     @GetMapping("/")
     public String healthCheck() {
-        return "ok seedd";
+        return """
+                {
+                    "status" : "ok",
+                    "message" : "API is running"
+                }
+                """;
     }
 }
